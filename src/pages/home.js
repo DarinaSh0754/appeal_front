@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
 import { Collapse, Jumbotron, Container, NavItem, Button } from 'reactstrap';
-import { Redirect, Route, Switch, Link } from 'react-router-dom';
 
 export default class Home extends Component {
   constructor(props) {
