@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './home.css';
 import { Collapse, Jumbotron, Container, NavItem, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
   constructor(props) {
@@ -11,16 +12,18 @@ export default class Home extends Component {
     return (
       <div className="vedro">
         <div className="container">
-          <Button color="link">
+          <button
+            type="submit"
+            className="ButtonAdd btn btn-primary"
+            color="link"
+          >
             <Link to="/appeal" className="link">
               Создать обращение
             </Link>
-          </Button>
-          <h1>Fluid jumbotron</h1>
-          <p>
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
+          </button>
+          <p>Гражданин? Подай обращение!</p>
+          <h1>APPEALSERVICE</h1>
+          <p>Универсальная платформа для решения вопросов</p>
         </div>
       </div>
     );

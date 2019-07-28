@@ -1,5 +1,22 @@
 .vedro {
   background-image: url(../img/vedro.jpg);
   background-color: #000066;
-  
+  height: auto;
+}
+html,
+body {
+  background-image: url(../img/vedro.jpg);
+  background-size: 90%;
+}
+h1 {
+  color: white;
+  text-align: center;
+  transform: (100px, 100px);
+}
+.ButtonAdd {
+  background-color: #66cccc; /* Grey*/
+  border: #66cccc;
+  position: absolute;
+  top: 70%;
+  text-align: center;
 }

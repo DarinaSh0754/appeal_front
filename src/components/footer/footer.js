@@ -8,7 +8,7 @@ export default class Header extends Component {
       <nav className="navbar fixed-bottom navbar-light bg-custom">
         <div className="navbar-brand text-light text-right">
           <img src={loc} />
-          г. Курск, ул. Ленина,1
+          г. Курск, ул. Ленина, 1
           <img src={vk} />
           vk.com/123456789
         </div>
