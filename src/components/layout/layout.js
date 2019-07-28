@@ -4,6 +4,7 @@ import Footer from '../footer/footer';
 import { Container } from 'reactstrap';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import routes from '../../routes';
+import './layout.js'
 
 export default class Layout extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ export default class Layout extends Component {
         <Header />
         <div className="app-body">
           <main className="main">
-            <Container fluid>
+            <Container fluid className="container-fluid p-0" >
               <Switch>
                 {this.getRoutes()}
                 <Redirect from="/" to="/home" />
