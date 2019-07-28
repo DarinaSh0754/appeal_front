@@ -6,41 +6,40 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import routes from '../../routes';
 
 export default class Layout extends Component {
-    constructor(props) {
-        super(props);
-        this.routes = routes;
-    }
-    getRoutes() {
-        return this.routes.map((route, idx) => {
-        return route.component ? (
-          <Route
-            key={idx}
-            path={route.path}
-            exact={route.exact}
-            name={route.name}
-            render={props => (
-              <route.component {...props} />
-            )} />
-          ) : (null);
-        })
-    }
-
-    render() {
-      return (
-        <div className="app">        
-        <Header/>
-          <div className="app-body">
-            <main className="main">
-              <Container fluid>
-                  <Switch>
-                    {this.getRoutes()}
-                  <Redirect from="/" to="/home" /> 
-                </Switch>
-              </Container>
-            </main>
-          </div>
-          <Footer className="justify-content-center"/>              
-          </div>  
-      );
-    }
+  constructor(props) {
+    super(props);
+    this.routes = routes;
   }
+  getRoutes() {
+    return this.routes.map((route, idx) => {
+      return route.component ? (
+        <Route
+          key={idx}
+          path={route.path}
+          exact={route.exact}
+          name={route.name}
+          render={props => <route.component {...props} />}
+        />
+      ) : null;
+    });
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <Header />
+        <div className="app-body">
+          <main className="main">
+            <Container fluid>
+              <Switch>
+                {this.getRoutes()}
+                <Redirect from="/" to="/home" />
+              </Switch>
+            </Container>
+          </main>
+        </div>
+        <Footer className="justify-content-center" />
+      </div>
+    );
+  }
+}
