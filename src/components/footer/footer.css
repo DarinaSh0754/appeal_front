@@ -3,7 +3,7 @@ img {
   margin-right: 10px;
   margin-left: 10px;
 }
-.navbar {
+.navbar.fixed-bottom {
   min-height: 100px;
   background-color: #c4c4c4;
 }
