@@ -26,7 +26,12 @@ export default class Header extends Component {
     return (
       <div className="header">
         <Navbar light expand="md">
-          <div className="title">Appeal</div>
+          <Button color="link">
+            <Link to="/" className="link">
+              <div className="title">Appeal</div>
+            </Link>
+          </Button>
+
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

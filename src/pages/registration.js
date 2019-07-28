@@ -12,37 +12,70 @@ export default class Registration extends Component {
           <div class="col-md-4 offset-md-4">
             <form>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
+                <div className="form-group">
+                  <label htmlFor="formGroupExampleInput">Ваше имя</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Введите Ваше имя"
+                  />
+                </div>
+                <label htmlFor="exampleInputEmail1">Электронная почта</label>
                 <input
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  placeholder="Введите Вашу электронную почту"
                 />
                 <small id="emailHelp" className="form-text text-muted">
-                  We'll never share your email with anyone else.
+                  Мы никогда не передадим вашу электронную почту кому-либо еще.
                 </small>
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputPassword1">Password</label>
+                <label htmlFor="exampleInputPassword1">Пароль</label>
                 <input
                   type="password"
                   className="form-control"
                   id="exampleInputPassword1"
-                  placeholder="Password"
+                  placeholder="Введите пароль"
                 />
               </div>
-              <div className="form-group form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label className="form-check-label" htmlFor="exampleCheck1">
-                  Check me out
-                </label>
-              </div>
+              <fieldset className="form-group">
+                <div className="row">
+                  <legend className="col-form-label col-sm-3 pt-0">
+                    Кто вы?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios1"
+                        value="option1"
+                        checked
+                      />
+                      <label className="form-check-label" for="gridRadios1">
+                        Пользователь
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios2"
+                        value="option2"
+                      />
+                      <label className="form-check-label" for="gridRadios2">
+                        Исполнитель
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>

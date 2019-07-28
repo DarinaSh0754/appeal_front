@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './appealForm.css';
 
 class AppealForm extends Component {
   render() {
