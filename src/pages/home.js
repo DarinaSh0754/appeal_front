@@ -21,7 +21,7 @@ export default class Home extends Component {
       <div>
         <Button color="link">
           <Link to="/appeal" className="link">
-            Регистрация
+            Создать обращение
           </Link>
         </Button>
         <div className="font1">ГРАЖДАНИН? ПОДАВАЙ ОБРАЩЕНИЕ!</div>
