@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './registration.css';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -43,9 +44,10 @@ export default class Registration extends Component {
                   Check me out
                 </label>
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="backButton btn btn-primary">
                 Submit
               </button>
+              
             </form>
           </div>
         </div>
