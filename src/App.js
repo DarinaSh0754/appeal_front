@@ -6,22 +6,20 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-   
-    this.state = ({
+
+    this.state = {
       redirect: false
-    });
-}      
+    };
+  }
 
   render() {
     return (
       <HashRouter>
-          <Switch>
-           <Route path="/" name="Главная" component={ Layout } />
-          </Switch>
+        <Switch>
+          <Route path="/" name="Главная" component={Layout} />
+        </Switch>
       </HashRouter>
     );
   }
 }
 export default App;
-
-
