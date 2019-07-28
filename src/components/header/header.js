@@ -37,16 +37,14 @@ export default class Header extends Component {
               <NavItem>
                 <Button color="link">
                   <Link to="/registration" className="link">
-                    {' '}
-                    Регистрация{' '}
+                    Регистрация
                   </Link>
                 </Button>
               </NavItem>
               <NavItem>
                 <Button color="link">
                   <Link to="/login" className="link">
-                    {' '}
-                    Вход{' '}
+                    Вход
                   </Link>
                 </Button>
               </NavItem>

@@ -6,7 +6,7 @@ export default class Header extends Component {
   render() {
     return (
       <nav className="navbar fixed-bottom navbar-light bg-custom">
-        <div className="navbar-brand text-light text-right">
+        <div className="myfont navbar-brand text-light text-right">
           <img src={loc} />
           г. Курск, ул. Ленина,1
           <img src={vk} />
