@@ -1,63 +1,68 @@
 import React, { Component } from 'react';
+import {
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  FormText,
+  Card,
+  CardBody,
+  CardHeader
+} from 'reactstrap';
+import './addAppeal.css';
 
 class AppealForm extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-3 offset-md-3">
-            <div className="dropdown">
-              <button
-                className="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Выберите исполнителя
-              </button>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <div className="dropdown-item">ЖКХ</div>
-                <div className="dropdown-item">Автомобильные дороги</div>
-                <div className="dropdown-item">Социальная сфера</div>
-                <div className="dropdown-item">Общественный транспорт</div>
-                <div className="dropdown-item">Трудовые отношения</div>
-                <div className="dropdown-item">Экология</div>
-                <div className="dropdown-item">Торговля, товары и услуги</div>
-                <div className="dropdown-item">Связь и телекоммуникации</div>
-                <div className="dropdown-item">Стройплощадки</div>
-              </div>
-            </div>
+      <div>
+        <div className="row justify-content-center">
+          <div className="col-8">
+            <h1>Подача обращения</h1>
+            <Card className="my-5">
+              <CardBody>
+                <FormGroup>
+                  <Label for="select">Выберете исполнителя:</Label>
+                  <Input
+                    type="select"
+                    className="select2"
+                    name="select"
+                    id="select"
+                  >
+                    <option>ЖКХ</option>
+                    <option>Автомобильные дороги</option>
+                    <option>Социальная сфера</option>
+                    <option>Общественный транспорт</option>
+                    <option>Трудовые отношения</option>
+                    <option>Экология</option>
+                    <option>Торговля, товары и услуги</option>
+                    <option>Связь и телекоммуникации</option>
+                    <option>Стройплощадки</option>
+                  </Input>
+                </FormGroup>
+                <FormGroup>
+                  <Label for="text">Опишите вашу проблему:</Label>
+                  <Input type="textarea" name="text" id="text" rows={5} />
+                </FormGroup>
+                <FormGroup className="mx-3">
+                  <Label for="file">Прикрепите файл</Label>
+                  <Input type="file" name="file" id="file" />
+                  <FormText color="muted">
+                    Фото, подтверждающие наличие проблемы.
+                  </FormText>
+                </FormGroup>
+                <div className="row justify-content-center">
+                  <div className="col-2">
+                    <Button color="secondary" size="lg">
+                      Отправить
+                    </Button>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
           </div>
         </div>
-        <div className="row">
-          <div className="col-6 form-group offset-md-3">
-            <label htmlFor="exampleFormControlTextarea1">
-              Опишите Вашу проблему
-            </label>
-            <textarea
-              className="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            />
-          </div>
-        </div>
-        <div className="row">
-          <form className="col-6 offset-md-3">
-            <div className="form-group">
-              <label htmlFor="exampleFormControlFile1">Добавьте фото</label>
-              <input
-                type="file"
-                className="form-control-file"
-                id="exampleFormControlFile1"
-              />
-            </div>
-          </form>
-        </div>
+        <div className="row" />
       </div>
     );
   }
