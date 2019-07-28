@@ -1,12 +1,15 @@
 img {
   max-width: 1%;
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .navbar.fixed-bottom {
-  min-height: 100px;
+  min-height: 50px;
   background-color: #c4c4c4;
 }
 .navbar-brand.text-light.text-right {
   margin-right: 140px;
+}
+.myfont {
+  font-size: 18px;
 }

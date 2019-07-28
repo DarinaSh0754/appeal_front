@@ -45,7 +45,7 @@ export default class Registration extends Component {
               </div>
               <fieldset className="form-group">
                 <div className="row">
-                  <legend className="col-form-label col-sm-2 pt-0">
+                  <legend className="col-form-label col-sm-3 pt-0">
                     Кто вы?
                   </legend>
                   <div className="col-sm-10">
