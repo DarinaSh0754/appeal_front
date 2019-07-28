@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect, Route, Switch, Link } from 'react-router-dom';
-import './header.css'
+import './header.css';
 import {
   Collapse,
   Navbar,
@@ -8,19 +8,20 @@ import {
   Nav,
   NavItem,
   Button,
-  NavLink } from 'reactstrap';
+  NavLink
+} from 'reactstrap';
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
-  this.state = {
-  redirectRegistration : false,
-  redirectLogin : false
+    this.state = {
+      redirectRegistration: false,
+      redirectLogin: false
+    };
   }
-}
-onRegistration=()=> {
- return <Redirect from="/home" to="/registration" />
-}
+  onRegistration = () => {
+    return <Redirect from="/home" to="/registration" />;
+  };
   render() {
     return (
       <div className="header">
@@ -28,15 +29,21 @@ onRegistration=()=> {
           <div className="title">Appeal</div>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
-            <NavItem>
-              <Button color="link">
-                <Link to="/registration" className="link"> Регистрация </Link>
-              </Button>
+              <NavItem>
+                <Button color="link">
+                  <Link to="/registration" className="link">
+                    {' '}
+                    Регистрация{' '}
+                  </Link>
+                </Button>
               </NavItem>
               <NavItem>
-              <Button color="link">
-                <Link to="/login" className="link"> Вход </Link>
-              </Button>
+                <Button color="link">
+                  <Link to="/login" className="link">
+                    {' '}
+                    Вход{' '}
+                  </Link>
+                </Button>
               </NavItem>
             </Nav>
           </Collapse>
