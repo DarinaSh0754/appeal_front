@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './appealForm.css';
 
 class AppealForm extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-8">
+          <div className="col-3 offset-md-3">
             <div className="dropdown">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -15,29 +16,29 @@ class AppealForm extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown button
+                Выберите исполнителя
               </button>
               <div
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton"
               >
-                <button className="dropdown-item" href="#">
-                  Action
-                </button>
-                <button className="dropdown-item" href="#">
-                  Another action
-                </button>
-                <button className="dropdown-item" href="#">
-                  Something else here
-                </button>
+                <div className="dropdown-item">ЖКХ</div>
+                <div className="dropdown-item">Автомобильные дороги</div>
+                <div className="dropdown-item">Социальная сфера</div>
+                <div className="dropdown-item">Общественный транспорт</div>
+                <div className="dropdown-item">Трудовые отношения</div>
+                <div className="dropdown-item">Экология</div>
+                <div className="dropdown-item">Торговля, товары и услуги</div>
+                <div className="dropdown-item">Связь и телекоммуникации</div>
+                <div className="dropdown-item">Стройплощадки</div>
               </div>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="form-group">
+          <div className="col-6 form-group offset-md-3">
             <label htmlFor="exampleFormControlTextarea1">
-              Example textarea
+              Опишите Вашу проблему
             </label>
             <textarea
               className="form-control"
@@ -47,7 +48,7 @@ class AppealForm extends Component {
           </div>
         </div>
         <div className="row">
-          <form>
+          <form className="col-6 offset-md-3">
             <div className="form-group">
               <label htmlFor="exampleFormControlFile1">Добавьте фото</label>
               <input
