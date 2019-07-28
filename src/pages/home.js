@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import vedro from '../img/vedro.jpg';
 import './home.css';
+import {
+  Collapse,
+  Jumbotron,
+  Container,
+  NavItem,
+  Button
+} from 'reactstrap';
 
 export default class Home extends Component {
   constructor(props) {
@@ -8,14 +14,12 @@ export default class Home extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <div className="font1">ГРАЖДАНИН? ПОДАВАЙ ОБРАЩЕНИЕ!</div>
-        <div className="font2">НАЗВАНИЕ</div>
-        <div className="font1">
-          УНИВЕРСАЛЬНАЯ ПЛАТФОРМА ДЛЯ РЕШЕНИЯ ВОПРОСОВ
+    return (  
+      <div className="vedro">
+        <div className="container">
+          <h1 >Fluid jumbotron</h1>
+          <p >This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
-        <img className="vedro-back" src={vedro} />
       </div>
     );
   }
