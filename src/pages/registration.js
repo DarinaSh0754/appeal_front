@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './registration.css';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ export default class Registration extends Component {
                   placeholder="Введите пароль"
                 />
               </div>
+<<<<<<< HEAD
               <fieldset className="form-group">
                 <div className="row">
                   <legend className="col-form-label col-sm-3 pt-0">
@@ -77,8 +79,22 @@ export default class Registration extends Component {
                 </div>
               </fieldset>
               <button type="submit" className="btn btn-primary">
+=======
+              <div className="form-group form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label className="form-check-label" htmlFor="exampleCheck1">
+                  Check me out
+                </label>
+              </div>
+              <button type="submit" className="backButton btn btn-primary">
+>>>>>>> 43eab81281746d41a20afd7a47af64f83989adac
                 Submit
               </button>
+              
             </form>
           </div>
         </div>
