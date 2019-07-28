@@ -43,16 +43,40 @@ export default class Registration extends Component {
                   placeholder="Введите пароль"
                 />
               </div>
-              <div className="form-group form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label className="form-check-label" htmlFor="exampleCheck1">
-                  Check me out
-                </label>
-              </div>
+              <fieldset className="form-group">
+                <div className="row">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Кто вы?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios1"
+                        value="option1"
+                        checked
+                      />
+                      <label className="form-check-label" for="gridRadios1">
+                        Пользователь
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios2"
+                        value="option2"
+                      />
+                      <label className="form-check-label" for="gridRadios2">
+                        Исполнитель
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
               <button type="submit" className="backButton btn btn-primary">
                 Submit
               </button>
